@@ -1,11 +1,10 @@
 FROM golang:1.13 AS builder
 
-RUN git clone https://github.com/cypx/syncthing.git /go/src/github.com/syncthing/syncthing
+RUN git clone https://github.com/syncthing/syncthing.git /go/src/github.com/syncthing/syncthing
 
 WORKDIR /go/src/github.com/syncthing/syncthing
 
 #RUN git checkout tags/v1.3.0
-RUN git checkout xforwadtls
 
 ENV CGO_ENABLED=0
 ENV BUILD_HOST=syncthing.net
