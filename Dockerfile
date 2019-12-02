@@ -4,7 +4,7 @@ RUN git clone https://github.com/syncthing/syncthing.git /go/src/github.com/sync
 
 WORKDIR /go/src/github.com/syncthing/syncthing
 
-RUN git checkout tags/v1.3.2-rc.2
+RUN git checkout tags/v1.3.2
 
 ENV CGO_ENABLED=0
 ENV BUILD_HOST=syncthing.net
